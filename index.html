@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</form></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,29 +12,32 @@
     </div>
     <div class="container"> 
             <img src="thammasat.svg" alt="thammasat logo" class="logo">
-            <p>information</p>
+            <p>Registration Form</p>
             <form>
                 <label for="name">ชื่อ-สกุล</label><br>
-                <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาไทย)"><br>
+                <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาไทย)"required> <br>
                 
                 <label for="name">Name</label><br>
-                <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาอังกฤษ)"><br>
+                <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาอังกฤษ)"required><br>
 
-                <div>
-                    <div>
+                <div class="input">
+                    <div class="studentid">
                         <label for="studentid">Student ID</label><br>
                         <input type="text" id="studentid" placeholder="ป้อนรหัสนักศึกษา">
                     </div>
-                    <div>
+                    <div class="select-radio">
                         <label>Gender</label>
-                        <div class="gender">
-                            <label><input type="radio" name="gender"> Male</label>
-                            <label><input type="radio" name="gender"> Female</label>
+                        <div class="selective">
+                            <label><input type="radio" name="Male"> Male</label>
+                            <label><input type="radio" name="Female"> Female</label>
+                            <label><input type="radio" name="LGBTQAI+"> LGBTQAI+</label>
+                            <label><input type="radio" name="Prefer not to say"> Prefer not to say</label>
                         </div>
                     </div>
                 </div>
 
                 <label>คณะที่กำลังศึกษา</label><br>
+                <div class="select-option">
                 <select>
                     <option value="" disabled selected>กรุณาเลือกคณะ</option>
                     <option value="ทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
@@ -64,15 +67,20 @@
                     <option value="โลกคดีศึกษา">วิทยาลัยโลกคดีศึกษา</option>
                     <option value="เทคโนโลยีนานาชาติสิรินธร">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
                 </select><br>
+                </div>
                 
+                <div class="input">
                 <label for="email">E-mail Address</label><br>
                 <input type="email" id="email" placeholder="ป้อนอีเมลของคุณ"><br>
+                </div>
 
                 <label for="birthdate">วันเดือนปีเกิด</label><br>
-                <input type="date" id="birthdate"><br>
+                <div class="date">
+                    <input type="date" id="birthdate">
+                </div>
 
                 <label>ประเภทของหนังสือที่สนใจ (เลือกได้มากกว่า 1 ข้อ)</label><br>
-                <div>
+                <div class="checkbox">
                     <label><input type="checkbox" name="หนังสือวิชาการ"> หนังสือวิชาการ</label>
                     <label><input type="checkbox" name="นิยาย/วรรณกรรม"> นวนิยาย/วรรณกรรม</label>
                     <label><input type="checkbox" name="หนังสือการ์ตูน"> หนังสือการ์ตูน</label>
@@ -81,14 +89,14 @@
                 </div>
 
                 <label>ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label><br>
-                <div>
+                <div class="select-radio">
+                    <div class="selective">
                      <label><input type="radio" name="yes"> ต้องการ</label>
                     <label><input type="radio" name="no"> ไม่ต้องการ</label>
+                    </div>
                 </div>
 
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
+                <button type="submit" class="submit-botton">Submit</button>
             </form>
     </div>
    

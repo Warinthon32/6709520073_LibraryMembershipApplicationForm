@@ -1,10 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: aliceblue;
+    background: linear-gradient(135deg, #ffc800, #ff2600);
     display: flex;
     justify-content: center; 
     align-items: center;    
-    min-height: 100vh;      
-    margin: 0;  
+    min-height: 100vh;    
     font-family: Arial, Helvetica, sans-serif;            
 }
 
@@ -12,10 +16,12 @@ body {
     display: flex; 
     flex-direction: column;
     width: 980px;
-    height: 720px;
+    height: auto;
     background-color:white;
     border-radius: 30px;
     position: relative;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     padding: 20px;
     margin: 50px
@@ -24,7 +30,7 @@ body {
     display: flex; 
     flex-direction: column;
     width: 360px;
-    height: 720px;
+    height:100vh;
     background-color:white;
     border-radius: 30px;
     position: relative;
@@ -45,5 +51,88 @@ img{
     width: 200px;
     height: auto;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    top: 10px;
+    position: relative;
+    flex-direction: column;
 
+}
+input[type="text"],input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ffc800, #ff2600);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+label {
+    font-size: 14px;
+    color: #5e5e5e;
+}
+
+.selective{
+    display: flex;
+    gap: 15px;
+}
+
+.select-radio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: nowrap;
+    flex: 1;
+    margin-bottom: 10px;
+    
+}
+
+.select-option{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding-top: 5px;
+}
+
+.date{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.education {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.submit-botton{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ffc800, #ff2600);
+    color: #fff;
+    border: none;
 }
