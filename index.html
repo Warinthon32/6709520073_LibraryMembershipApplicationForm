@@ -8,13 +8,88 @@
 </head>
 <body>
     <div class="media"> 
-        <img src="tu library.jpg" alt="tu library">
+        <img src="tu library.jpg" alt="tu library" >
     </div>
     <div class="container"> 
-        <form>
-            <h1>Information</h1>
-            <h2>Name</h2>
-        </form>
+            <img src="thammasat.svg" alt="thammasat logo" class="logo">
+            <p>information</p>
+            <form>
+                <label for="name">ชื่อ-สกุล</label><br>
+                <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาไทย)"><br>
+                
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาอังกฤษ)"><br>
+
+                <div>
+                    <div>
+                        <label for="studentid">Student ID</label><br>
+                        <input type="text" id="studentid" placeholder="ป้อนรหัสนักศึกษา">
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                        <div class="gender">
+                            <label><input type="radio" name="gender"> Male</label>
+                            <label><input type="radio" name="gender"> Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <label>คณะที่กำลังศึกษา</label><br>
+                <select>
+                    <option value="" disabled selected>กรุณาเลือกคณะ</option>
+                    <option value="ทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
+                    <option value="นิติศาสตร์">คณะนิติศาสตร์</option>
+                    <option value="พยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+                    <option value="พาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี</option>
+                    <option value="รัฐศาสตร์">คณะรัฐศาสตร์</option>
+                    <option value="วารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                    <option value="วิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                    <option value="วิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                    <option value="วิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
+                    <option value="ศิลปกรรมศาสตร์">คณะศิลปกรรมศาสตร์</option>
+                    <option value="ศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                    <option value="สถาปัตยกรรมศาสตร์และการผังเมือง">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                    <option value="สหเวชศาสตร์">คณะสหเวชศาสตร์</option>
+                    <option value="สังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                    <option value="สังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์</option>
+                    <option value="สาธารณสุขศาสตร์">คณะสาธารณสุขศาสตร์</option>
+                    <option value="เภสัชศาสตร์">คณะเภสัชศาสตร์</option>
+                    <option value="เศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                    <option value="แพทยศาสตร์">คณะแพทยศาสตร์</option>
+                    <option value="นวัตกรรม">วิทยาลัยนวัตกรรม</option>
+                    <option value="นานาชาติปรีดีพนมยงค์">วิทยาลัยนานาชาติปรีดีพนมยงค์</option>
+                    <option value="พัฒนศาสตร์ป๋วยอึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์</option>
+                    <option value="สหวิทยาการ">วิทยาลัยสหวิทยาการ</option>
+                    <option value="แพทยศาสตร์นานาชาติจุฬาภรณ์">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+                    <option value="โลกคดีศึกษา">วิทยาลัยโลกคดีศึกษา</option>
+                    <option value="เทคโนโลยีนานาชาติสิรินธร">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+                </select><br>
+                
+                <label for="email">E-mail Address</label><br>
+                <input type="email" id="email" placeholder="ป้อนอีเมลของคุณ"><br>
+
+                <label for="birthdate">วันเดือนปีเกิด</label><br>
+                <input type="date" id="birthdate"><br>
+
+                <label>ประเภทของหนังสือที่สนใจ (เลือกได้มากกว่า 1 ข้อ)</label><br>
+                <div>
+                    <label><input type="checkbox" name="หนังสือวิชาการ"> หนังสือวิชาการ</label>
+                    <label><input type="checkbox" name="นิยาย/วรรณกรรม"> นวนิยาย/วรรณกรรม</label>
+                    <label><input type="checkbox" name="หนังสือการ์ตูน"> หนังสือการ์ตูน</label>
+                    <label><input type="checkbox" name="นิตยสาร"> นิตยสาร</label>
+                    <label><input type="checkbox" name="สารคดี"> สารคดี</label>
+                </div>
+
+                <label>ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label><br>
+                <div>
+                     <label><input type="radio" name="yes"> ต้องการ</label>
+                    <label><input type="radio" name="no"> ไม่ต้องการ</label>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
     </div>
    
     
