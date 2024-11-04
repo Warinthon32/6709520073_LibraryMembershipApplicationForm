@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,38 +16,39 @@ body {
     display: flex; 
     flex-direction: column;
     width: 980px;
-    height: auto;
-    background-color:white;
-    border-radius: 30px;
+    height: 980px;
+    background-color: white;
+    border-radius: 5px;
     position: relative;
     justify-content: center;
     align-items: center;
     text-align: left;
     padding: 20px;
-    margin: 50px
+    margin: 50px;
 }
+
 .media {
     display: flex; 
     flex-direction: column;
     width: 360px;
-    height:100vh;
-    background-color:white;
-    border-radius: 30px;
+    height: 980px;
+    background-color: white;
+    border-radius: 5px;
     position: relative;
     align-items: center; 
     text-align: center;
     justify-content: center;
     padding: 20px;
-   margin-left: 50px;
-   
+    margin-left: 50px;
 }
-img{
+
+img {
     width: 360px;
     height: 360px;
     align-items: center;
-    
 }
-.logo{
+
+.logo {
     width: 200px;
     height: auto;
     margin-bottom: 10px;
@@ -56,15 +57,14 @@ img{
     top: 10px;
     position: relative;
     flex-direction: column;
-
 }
-input[type="text"],input[type="email"]{
+
+input[type="text"], input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    
 }
 
 p {
@@ -75,35 +75,33 @@ p {
     color: transparent;
 }
 
-
 label {
     font-size: 14px;
     color: #5e5e5e;
 }
 
-.selective{
+.selective {
     display: flex;
     gap: 15px;
 }
 
-.select-radio{
+.select-radio {
     display: flex;
     flex-direction: column;
     gap: 10px;
     flex-wrap: nowrap;
     flex: 1;
     margin-bottom: 10px;
-    
 }
 
-.select-option{
+.select-option {
     display: flex;
     flex-direction: column;
-    flex:1;
+    flex: 1;
     padding-top: 5px;
 }
 
-.date{
+.date {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -118,7 +116,7 @@ label {
     margin-bottom: 15px;
 }
 
-.checkbox{
+.checkbox {
     margin-top: 5px;
     margin-bottom: 10px;
     display: flex;
@@ -127,7 +125,7 @@ label {
     gap: 10px;
 }
 
-.submit-botton{
+.submit-botton {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -135,4 +133,44 @@ label {
     background: linear-gradient(135deg, #ffc800, #ff2600);
     color: #fff;
     border: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        flex-direction: column;
+    }
+   
+    .media {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 70%;
+        padding: 10px;
+        order: -1; 
+        height: auto;
+    }
+    .container {
+        width: 70%;
+        padding: 10px;
+        margin: 30px;
+        
+    }
+    .selective, .education, .checkbox {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .submit-botton {
+        font-size: 14px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    input[type="text"], input[type="email"] {
+        max-width: 100%;
+        padding: 6px;
+        font-size: 12px;
+    }
 }
