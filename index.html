@@ -3,42 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</form></title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="media"> 
-        <img src="tu library.jpg" alt="tu library" >
-    </div>
-    <div class="container"> 
-            <img src="thammasat.svg" alt="thammasat logo" class="logo">
-            <p>Registration Form</p>
-            <form>
-                <label for="name">ชื่อ-สกุล</label><br>
-                <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาไทย)"required> <br>
-                
-                <label for="name">Name</label><br>
-                <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาอังกฤษ)"required><br>
+    <div class="container">
+        <img src="thammasat.svg" alt="Thammasat logo" class="logo">
+        <p>TULibrary Membership Registration Form </p>
 
-                <div class="input">
-                    <div class="studentid">
-                        <label for="studentid">Student ID</label><br>
-                        <input type="text" id="studentid" placeholder="ป้อนรหัสนักศึกษา">
-                    </div>
-                    <div class="select-radio">
-                        <label>Gender</label>
-                        <div class="selective">
-                            <label><input type="radio" name="Male"> Male</label>
-                            <label><input type="radio" name="Female"> Female</label>
-                            <label><input type="radio" name="LGBTQAI+"> LGBTQAI+</label>
-                            <label><input type="radio" name="Prefer not to say"> Prefer not to say</label>
-                        </div>
+        <form>
+            <label for="name">ชื่อ-สกุล</label>
+            <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาไทย)" required>
+
+            <label for="name_en">Name</label>
+            <input type="text" id="name_en" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาอังกฤษ)" required>
+
+            <div class="input">
+                <div class="studentid">
+                    <label for="studentid">Student ID</label>
+                    <input type="text" id="studentid" placeholder="ป้อนรหัสนักศึกษา" required>
+                </div>
+                <div class="select-radio">
+                    <label>Gender</label>
+                    <div class="selective">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="LGBTQAI+"> LGBTQAI+</label>
+                        <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
                     </div>
                 </div>
+            </div>
 
-                <label>คณะที่กำลังศึกษา</label><br>
-                <div class="select-option">
-                <select>
+            <label>คณะที่กำลังศึกษา</label>
+            <div class="select-option">
+                <select required>
                     <option value="" disabled selected>กรุณาเลือกคณะ</option>
                     <option value="ทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
                     <option value="นิติศาสตร์">คณะนิติศาสตร์</option>
@@ -66,40 +64,34 @@
                     <option value="แพทยศาสตร์นานาชาติจุฬาภรณ์">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
                     <option value="โลกคดีศึกษา">วิทยาลัยโลกคดีศึกษา</option>
                     <option value="เทคโนโลยีนานาชาติสิรินธร">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
-                </select><br>
-                </div>
-                
-                <div class="input">
-                <label for="email">E-mail Address</label><br>
-                <input type="email" id="email" placeholder="ป้อนอีเมลของคุณ"><br>
-                </div>
+                </select>
+            </div>
 
-                <label for="birthdate">วันเดือนปีเกิด</label><br>
-                <div class="date">
-                    <input type="date" id="birthdate">
-                </div>
+            <label for="email">E-mail Address</label>
+            <input type="email" id="email" placeholder="ป้อนอีเมลของคุณ">
 
-                <label>ประเภทของหนังสือที่สนใจ (เลือกได้มากกว่า 1 ข้อ)</label><br>
-                <div class="checkbox">
-                    <label><input type="checkbox" name="หนังสือวิชาการ"> หนังสือวิชาการ</label>
-                    <label><input type="checkbox" name="นิยาย/วรรณกรรม"> นวนิยาย/วรรณกรรม</label>
-                    <label><input type="checkbox" name="หนังสือการ์ตูน"> หนังสือการ์ตูน</label>
-                    <label><input type="checkbox" name="นิตยสาร"> นิตยสาร</label>
-                    <label><input type="checkbox" name="สารคดี"> สารคดี</label>
-                </div>
+            <label for="birthdate">วันเดือนปีเกิด</label>
+            <input type="date" id="birthdate" class="date">
 
-                <label>ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label><br>
-                <div class="select-radio">
-                    <div class="selective">
-                     <label><input type="radio" name="yes"> ต้องการ</label>
-                    <label><input type="radio" name="no"> ไม่ต้องการ</label>
-                    </div>
-                </div>
+            <label>ประเภทของหนังสือที่สนใจ (เลือกได้มากกว่า 1 ข้อ)</label>
+            <div class="checkbox">
+                <label><input type="checkbox" name="book_type" value="วิชาการ"> หนังสือวิชาการ</label>
+                <label><input type="checkbox" name="book_type" value="นิยาย/วรรณกรรม"> นวนิยาย/วรรณกรรม</label>
+                <label><input type="checkbox" name="book_type" value="หนังสือการ์ตูน"> หนังสือการ์ตูน</label>
+                <label><input type="checkbox" name="book_type" value="นิตยสาร"> นิตยสาร</label>
+                <label><input type="checkbox" name="book_type" value="สารคดี"> สารคดี</label>
+            </div>
 
-                <button type="submit" class="submit-botton">Submit</button>
-            </form>
+            <label>ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่</label>
+            <div class="select-radio">
+                <div class="selective">
+                    <label><input type="radio" name="subscribe" value="yes"> ต้องการ</label>
+                    <label><input type="radio" name="subscribe" value="no"> ไม่ต้องการ</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-botton">Submit</button>
+        </form>
     </div>
-   
-    
 </body>
 </html>
