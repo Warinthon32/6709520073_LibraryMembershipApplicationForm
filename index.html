@@ -12,15 +12,15 @@
         <p>TULibrary Membership Registration Form </p>
 
         <form>
-            <label for="name">ชื่อ-สกุล</label>
+            <label for="name">ชื่อ-สกุล *</label>
             <input type="text" id="name" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาไทย)" required>
 
-            <label for="name_en">Name</label>
+            <label for="name_en">Name *</label>
             <input type="text" id="name_en" placeholder="ป้อนชื่อนามสกุลจริง (ภาษาอังกฤษ)" required>
 
             <div class="input">
                 <div class="studentid">
-                    <label for="studentid">Student ID</label>
+                    <label for="studentid">Student ID *</label>
                     <input type="text" id="studentid" placeholder="ป้อนรหัสนักศึกษา" required>
                 </div>
                 <div class="select-radio">
@@ -67,11 +67,17 @@
                 </select>
             </div>
 
-            <label for="email">E-mail Address</label>
+            <label for="email">E-mail Address *</label>
             <input type="email" id="email" placeholder="ป้อนอีเมลของคุณ">
 
             <label for="birthdate">วันเดือนปีเกิด</label>
             <input type="date" id="birthdate" class="date">
+
+            <div class="">
+                <label for="name_en">อายุ *</label>
+            <input type="number" id="Ages" placeholder="ป้อนอายุของคุณ" required>
+
+            </div>
 
             <label>ประเภทของหนังสือที่สนใจ (เลือกได้มากกว่า 1 ข้อ)</label>
             <div class="checkbox">

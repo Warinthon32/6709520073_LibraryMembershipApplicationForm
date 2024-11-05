@@ -39,7 +39,7 @@ img {
     margin-bottom: 10px;
 }
 
-input[type="text"], input[type="email"], .date {
+input[type="text"], input[type="email"],input[type="number"], .date {
     width: 100%;
     max-width: 100%;
     padding: 10px;
@@ -73,7 +73,7 @@ label {
    
 }
 
-.select-radio, .select-option,{
+.select-radio, .select-option {
     display: flex;
     flex-direction: column;
     gap: 10px;
